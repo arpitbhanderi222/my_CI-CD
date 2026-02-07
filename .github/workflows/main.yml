@@ -24,8 +24,7 @@ jobs:
       - name: Upload website files
         uses: actions/upload-pages-artifact@v3
         with:
-          # IMPORTANT: this is where your index.html exists
-          path: my_CI-CD
+          path: .
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
