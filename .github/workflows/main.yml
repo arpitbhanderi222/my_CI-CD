@@ -18,13 +18,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Pages
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload site files
+      - name: Upload website files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          # IMPORTANT: this is where your index.html exists
+          path: my_CI-CD
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
